@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutella Mini App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body {
+            background-color: #8B4513; /* Коричневый фон */
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .nutella-text {
+            color: #5D2906; /* Темно-коричневый текст */
+            font-weight: bold;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Инициализация Telegram WebApp
+        Telegram.WebApp.ready();
+        Telegram.WebApp.expand(); // Раскрыть на весь экран
+    </script>
+
+    <div id="nutella-container">
+        <!-- 50 надписей "Тёплая нутелла" -->
+        <script>
+            for (let i = 0; i < 50; i++) {
+                document.write('<div class="nutella-text">Тёплая нутелла</div>');
+            }
+        </script>
+    </div>
+</body>
+</html>
